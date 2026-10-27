@@ -1,0 +1,538 @@
+{
+  "distribution_licenses": [
+    {
+      "distribution": "agentdojo",
+      "version": "0.1.35",
+      "path": "third_party_licenses/agentdojo/agentdojo-0.1.35.dist-info__licenses__LICENSE",
+      "sha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e"
+    },
+    {
+      "distribution": "annotated-types",
+      "version": "0.8.0",
+      "path": "third_party_licenses/annotated-types/annotated_types-0.8.0.dist-info__licenses__LICENSE",
+      "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+    },
+    {
+      "distribution": "anthropic",
+      "version": "1.11.0",
+      "path": "third_party_licenses/anthropic/anthropic-1.11.0.dist-info__licenses__LICENSE",
+      "sha256": "8bf96984ff8bcfae7e48cae76a529e8a25317ba9e02abf7fd3cc64fdf95657a6"
+    },
+    {
+      "distribution": "anthropic",
+      "version": "1.11.0",
+      "path": "third_party_licenses/anthropic/anthropic___vendor__httpx_aiohttp__LICENSE",
+      "sha256": "154759c1e9eb58e42643ee43ec59d556def4d1d702d911a484c469e02f85dd5d"
+    },
+    {
+      "distribution": "anyio",
+      "version": "4.15.1",
+      "path": "third_party_licenses/anyio/anyio-4.15.1.dist-info__licenses__LICENSE",
+      "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+    },
+    {
+      "distribution": "cachebox",
+      "version": "5.2.3",
+      "path": "third_party_licenses/cachebox/cachebox-5.2.3.dist-info__licenses__LICENSE",
+      "sha256": "3ed699cdb1ef018aecea0d04a925bc652477c63b154d9db9d5e5359713b3794f"
+    },
+    {
+      "distribution": "certifi",
+      "version": "2026.7.22",
+      "path": "third_party_licenses/certifi/certifi-2026.7.22.dist-info__licenses__LICENSE",
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    {
+      "distribution": "cffi",
+      "version": "2.1.1",
+      "path": "third_party_licenses/cffi/cffi-2.1.1.dist-info__licenses__LICENSE",
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+    },
+    {
+      "distribution": "charset-normalizer",
+      "version": "3.5.2",
+      "path": "third_party_licenses/charset-normalizer/charset_normalizer-3.5.2.dist-info__licenses__LICENSE",
+      "sha256": "18577485d3704f1a479ded8e573c0976cfed315fd2fd17983fa988da4c2f70d1"
+    },
+    {
+      "distribution": "click",
+      "version": "8.5.0",
+      "path": "third_party_licenses/click/click-8.5.0.dist-info__licenses__LICENSE.txt",
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "distribution": "cohere",
+      "version": "7.2.0",
+      "path": "third_party_licenses/cohere/cohere-7.2.0.dist-info__LICENSE",
+      "sha256": "44dacccab1bb49645b3c6def3c0c92aaa1bbca2e0489af398b2c229682047015"
+    },
+    {
+      "distribution": "colorama",
+      "version": "0.4.6",
+      "path": "third_party_licenses/colorama/colorama-0.4.6.dist-info__licenses__LICENSE.txt",
+      "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+    },
+    {
+      "distribution": "cryptography",
+      "version": "50.0.2",
+      "path": "third_party_licenses/cryptography/cryptography-50.0.2.dist-info__licenses__LICENSE",
+      "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+    },
+    {
+      "distribution": "cryptography",
+      "version": "50.0.2",
+      "path": "third_party_licenses/cryptography/cryptography-50.0.2.dist-info__licenses__LICENSE.APACHE",
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+    },
+    {
+      "distribution": "cryptography",
+      "version": "50.0.2",
+      "path": "third_party_licenses/cryptography/cryptography-50.0.2.dist-info__licenses__LICENSE.BSD",
+      "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+    },
+    {
+      "distribution": "deepdiff",
+      "version": "9.1.0",
+      "path": "third_party_licenses/deepdiff/deepdiff-9.1.0.dist-info__licenses__LICENSE",
+      "sha256": "b6a7f272a509d922ca04e71367f90cfc8e7ecf4d38985b453a431b1ea22af7c8"
+    },
+    {
+      "distribution": "distro",
+      "version": "1.9.0",
+      "path": "third_party_licenses/distro/distro-1.9.0.dist-info__LICENSE",
+      "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+    },
+    {
+      "distribution": "dnspython",
+      "version": "2.8.0",
+      "path": "third_party_licenses/dnspython/dnspython-2.8.0.dist-info__licenses__LICENSE",
+      "sha256": "c3ea3ff5654b329c19d3bc5f7481af623c3dded4a6145585499f843ad3d741cd"
+    },
+    {
+      "distribution": "docstring_parser",
+      "version": "0.18.0",
+      "path": "third_party_licenses/docstring-parser/docstring_parser-0.18.0.dist-info__licenses__LICENSE.md",
+      "sha256": "dfe514a337ae8417abd31a8af707bbd6172b03e5430bb083e145899ea97a3eea"
+    },
+    {
+      "distribution": "email-validator",
+      "version": "2.3.0",
+      "path": "third_party_licenses/email-validator/email_validator-2.3.0.dist-info__licenses__LICENSE",
+      "sha256": "672179752e109134a3fb2bdd0780b29fdb7a03974f0f586a13aead5129562d4c"
+    },
+    {
+      "distribution": "fastavro",
+      "version": "1.13.0",
+      "path": "third_party_licenses/fastavro/fastavro-1.13.0.dist-info__licenses__LICENSE",
+      "sha256": "221f2c23e2814d7b5a23899011426cada1ec80c95193f80aab5fc005917f42ff"
+    },
+    {
+      "distribution": "fastavro",
+      "version": "1.13.0",
+      "path": "third_party_licenses/fastavro/fastavro-1.13.0.dist-info__licenses__NOTICE.txt",
+      "sha256": "0215f44c556bc47360c3f41bc9fc8196575a69e48aaeaa44ce4c2af3c23087d5"
+    },
+    {
+      "distribution": "filelock",
+      "version": "4.0.12",
+      "path": "third_party_licenses/filelock/filelock-4.0.12.dist-info__licenses__LICENSE",
+      "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+    },
+    {
+      "distribution": "fsspec",
+      "version": "2026.9.0",
+      "path": "third_party_licenses/fsspec/fsspec-2026.9.0.dist-info__licenses__LICENSE",
+      "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+    },
+    {
+      "distribution": "google-auth",
+      "version": "2.60.0",
+      "path": "third_party_licenses/google-auth/google_auth-2.60.0.dist-info__licenses__LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "distribution": "google-genai",
+      "version": "2.28.0",
+      "path": "third_party_licenses/google-genai/google_genai-2.28.0.dist-info__licenses__LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "distribution": "h11",
+      "version": "0.16.0",
+      "path": "third_party_licenses/h11/h11-0.16.0.dist-info__licenses__LICENSE.txt",
+      "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+    },
+    {
+      "distribution": "hf-xet",
+      "version": "1.7.0",
+      "path": "third_party_licenses/hf-xet/hf_xet-1.7.0.dist-info__licenses__LICENSE",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "distribution": "httpcore",
+      "version": "1.0.9",
+      "path": "third_party_licenses/httpcore/httpcore-1.0.9.dist-info__licenses__LICENSE.md",
+      "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+    },
+    {
+      "distribution": "httpcore2",
+      "version": "2.13.1",
+      "path": "third_party_licenses/httpcore2/httpcore2-2.13.1.dist-info__licenses__LICENSE.md",
+      "sha256": "c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9"
+    },
+    {
+      "distribution": "httpx",
+      "version": "0.28.1",
+      "path": "third_party_licenses/httpx/httpx-0.28.1.dist-info__licenses__LICENSE.md",
+      "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+    },
+    {
+      "distribution": "httpx2",
+      "version": "2.13.1",
+      "path": "third_party_licenses/httpx2/httpx2-2.13.1.dist-info__licenses__LICENSE.md",
+      "sha256": "7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30"
+    },
+    {
+      "distribution": "huggingface_hub",
+      "version": "1.33.0",
+      "path": "third_party_licenses/huggingface-hub/huggingface_hub-1.33.0.dist-info__licenses__LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "distribution": "idna",
+      "version": "3.20",
+      "path": "third_party_licenses/idna/idna-3.20.dist-info__licenses__LICENSE.md",
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "distribution": "jiter",
+      "version": "0.17.0",
+      "path": "third_party_licenses/jiter/jiter-0.17.0.dist-info__licenses__LICENSE",
+      "sha256": "e65c152aa65deaaa52019855bf1bbce4a0d592a048cb523b6ca691965741241e"
+    },
+    {
+      "distribution": "jsonpatch",
+      "version": "1.33",
+      "path": "third_party_licenses/jsonpatch/jsonpatch-1.33.dist-info__LICENSE",
+      "sha256": "4393eb6733fa1e367f41769b382f4f1be7bf0daeb1e243ed92b3f5d8bafd236f"
+    },
+    {
+      "distribution": "jsonpointer",
+      "version": "3.1.1",
+      "path": "third_party_licenses/jsonpointer/jsonpointer-3.1.1.dist-info__licenses__AUTHORS",
+      "sha256": "4d58319d0f59c87bef5b07b3fe4db0f19c2d7d5545b034c6bf7b57c89bbef57f"
+    },
+    {
+      "distribution": "jsonpointer",
+      "version": "3.1.1",
+      "path": "third_party_licenses/jsonpointer/jsonpointer-3.1.1.dist-info__licenses__LICENSE.txt",
+      "sha256": "d8b24f15d472885f788a2d6e985850f264627b86012a17bb242c83f310d907e5"
+    },
+    {
+      "distribution": "langchain",
+      "version": "1.4.3",
+      "path": "third_party_licenses/langchain/langchain-1.4.3.dist-info__licenses__LICENSE",
+      "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478"
+    },
+    {
+      "distribution": "langchain-core",
+      "version": "1.6.7",
+      "path": "third_party_licenses/langchain-core/langchain_core-1.6.7.dist-info__licenses__LICENSE",
+      "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478"
+    },
+    {
+      "distribution": "langchain-protocol",
+      "version": "0.0.19",
+      "path": "third_party_licenses/langchain-protocol/langchain_protocol-0.0.19.dist-info__licenses__LICENSE",
+      "sha256": "893e6e30275896912c21c77f9f7c112aba85fd985d05b26a29424cf7e511d177"
+    },
+    {
+      "distribution": "langgraph",
+      "version": "1.2.14",
+      "path": "third_party_licenses/langgraph/langgraph-1.2.14.dist-info__licenses__LICENSE",
+      "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+    },
+    {
+      "distribution": "langgraph-checkpoint",
+      "version": "4.2.0",
+      "path": "third_party_licenses/langgraph-checkpoint/langgraph_checkpoint-4.2.0.dist-info__licenses__LICENSE",
+      "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+    },
+    {
+      "distribution": "langgraph-prebuilt",
+      "version": "1.1.0",
+      "path": "third_party_licenses/langgraph-prebuilt/langgraph_prebuilt-1.1.0.dist-info__licenses__LICENSE",
+      "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+    },
+    {
+      "distribution": "langgraph-sdk",
+      "version": "0.4.6",
+      "path": "third_party_licenses/langgraph-sdk/langgraph_sdk-0.4.6.dist-info__licenses__LICENSE",
+      "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+    },
+    {
+      "distribution": "markdown-it-py",
+      "version": "4.2.0",
+      "path": "third_party_licenses/markdown-it-py/markdown_it_py-4.2.0.dist-info__licenses__LICENSE",
+      "sha256": "4a2260d6e2cd0f5a151a1e86dbfe7d3ed552b1e2beabf9941c1ba5c49cbce484"
+    },
+    {
+      "distribution": "markdown-it-py",
+      "version": "4.2.0",
+      "path": "third_party_licenses/markdown-it-py/markdown_it_py-4.2.0.dist-info__licenses__LICENSE.markdown-it",
+      "sha256": "792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473"
+    },
+    {
+      "distribution": "mdurl",
+      "version": "0.1.2",
+      "path": "third_party_licenses/mdurl/mdurl-0.1.2.dist-info__LICENSE",
+      "sha256": "7c605df6e28667a9603118e98274f64a49ce3eed0d26fccce9534a345e0ef955"
+    },
+    {
+      "distribution": "openai",
+      "version": "3.24.0",
+      "path": "third_party_licenses/openai/openai-3.24.0.dist-info__licenses__LICENSE",
+      "sha256": "636eb7d79da9bb6d515a4b3fd417aa26679eb3cf16396ddab4bc55fa74e616e4"
+    },
+    {
+      "distribution": "openai",
+      "version": "3.24.0",
+      "path": "third_party_licenses/openai/openai___vendor__httpx_aiohttp__LICENSE",
+      "sha256": "154759c1e9eb58e42643ee43ec59d556def4d1d702d911a484c469e02f85dd5d"
+    },
+    {
+      "distribution": "orderly-set",
+      "version": "5.5.0",
+      "path": "third_party_licenses/orderly-set/orderly_set-5.5.0.dist-info__licenses__MIT-LICENSE",
+      "sha256": "148a76af346877c70ca60b826ec4175d6d907cb90d781c7b16d854d1c5c1a30c"
+    },
+    {
+      "distribution": "orjson",
+      "version": "3.12.0",
+      "path": "third_party_licenses/orjson/orjson-3.12.0.dist-info__licenses__LICENSE-APACHE",
+      "sha256": "7cfd738c53d61c79f07e348f622bf7707c9084237054d37fbe07788a75f5881c"
+    },
+    {
+      "distribution": "orjson",
+      "version": "3.12.0",
+      "path": "third_party_licenses/orjson/orjson-3.12.0.dist-info__licenses__LICENSE-MIT",
+      "sha256": "36516aefdc84c5d5a1e7485425913a22dbda69eb1930c5e84d6ae4972b5194b9"
+    },
+    {
+      "distribution": "orjson",
+      "version": "3.12.0",
+      "path": "third_party_licenses/orjson/orjson-3.12.0.dist-info__licenses__LICENSE-MPL-2.0",
+      "sha256": "9303ea1cfbf049945652668089d753fb1a7e1f2e52c680615c3d2cea7515c118"
+    },
+    {
+      "distribution": "ormsgpack",
+      "version": "1.12.2",
+      "path": "third_party_licenses/ormsgpack/ormsgpack-1.12.2.dist-info__licenses__LICENSE-APACHE",
+      "sha256": "7cfd738c53d61c79f07e348f622bf7707c9084237054d37fbe07788a75f5881c"
+    },
+    {
+      "distribution": "ormsgpack",
+      "version": "1.12.2",
+      "path": "third_party_licenses/ormsgpack/ormsgpack-1.12.2.dist-info__licenses__LICENSE-MIT",
+      "sha256": "36516aefdc84c5d5a1e7485425913a22dbda69eb1930c5e84d6ae4972b5194b9"
+    },
+    {
+      "distribution": "ormsgpack",
+      "version": "1.12.2",
+      "path": "third_party_licenses/ormsgpack/ormsgpack-1.12.2.dist-info__licenses__LICENSE-APACHE",
+      "sha256": "7cfd738c53d61c79f07e348f622bf7707c9084237054d37fbe07788a75f5881c"
+    },
+    {
+      "distribution": "ormsgpack",
+      "version": "1.12.2",
+      "path": "third_party_licenses/ormsgpack/ormsgpack-1.12.2.dist-info__licenses__LICENSE-MIT",
+      "sha256": "36516aefdc84c5d5a1e7485425913a22dbda69eb1930c5e84d6ae4972b5194b9"
+    },
+    {
+      "distribution": "packaging",
+      "version": "26.3",
+      "path": "third_party_licenses/packaging/packaging-26.3.dist-info__licenses__LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "distribution": "packaging",
+      "version": "26.3",
+      "path": "third_party_licenses/packaging/packaging-26.3.dist-info__licenses__LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "distribution": "packaging",
+      "version": "26.3",
+      "path": "third_party_licenses/packaging/packaging-26.3.dist-info__licenses__LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "distribution": "pyasn1",
+      "version": "0.6.4",
+      "path": "third_party_licenses/pyasn1/pyasn1-0.6.4.dist-info__licenses__LICENSE.rst",
+      "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+    },
+    {
+      "distribution": "pyasn1_modules",
+      "version": "0.4.2",
+      "path": "third_party_licenses/pyasn1-modules/pyasn1_modules-0.4.2.dist-info__licenses__LICENSE.txt",
+      "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+    },
+    {
+      "distribution": "pycparser",
+      "version": "3.0",
+      "path": "third_party_licenses/pycparser/pycparser-3.0.dist-info__licenses__LICENSE",
+      "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1"
+    },
+    {
+      "distribution": "pydantic",
+      "version": "2.13.5",
+      "path": "third_party_licenses/pydantic/pydantic-2.13.5.dist-info__licenses__LICENSE",
+      "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+    },
+    {
+      "distribution": "pydantic_core",
+      "version": "2.46.5",
+      "path": "third_party_licenses/pydantic-core/pydantic_core-2.46.5.dist-info__licenses__LICENSE",
+      "sha256": "fbe7f615f18d135c07000e5a86325db27f42c7729699ef166ac1f7a3f4586bf4"
+    },
+    {
+      "distribution": "Pygments",
+      "version": "2.21.0",
+      "path": "third_party_licenses/pygments/pygments-2.21.0.dist-info__licenses__AUTHORS",
+      "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+    },
+    {
+      "distribution": "Pygments",
+      "version": "2.21.0",
+      "path": "third_party_licenses/pygments/pygments-2.21.0.dist-info__licenses__LICENSE",
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "distribution": "python-dotenv",
+      "version": "1.2.4",
+      "path": "third_party_licenses/python-dotenv/python_dotenv-1.2.4.dist-info__licenses__LICENSE",
+      "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+    },
+    {
+      "distribution": "PyYAML",
+      "version": "6.0.3",
+      "path": "third_party_licenses/pyyaml/pyyaml-6.0.3.dist-info__licenses__LICENSE",
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+    },
+    {
+      "distribution": "requests",
+      "version": "2.34.2",
+      "path": "third_party_licenses/requests/requests-2.34.2.dist-info__licenses__LICENSE",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "distribution": "requests",
+      "version": "2.34.2",
+      "path": "third_party_licenses/requests/requests-2.34.2.dist-info__licenses__NOTICE",
+      "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+    },
+    {
+      "distribution": "requests-toolbelt",
+      "version": "1.0.0",
+      "path": "third_party_licenses/requests-toolbelt/requests_toolbelt-1.0.0.dist-info__LICENSE",
+      "sha256": "1f8cf8bdacd98ed6d36d0fec0c07f7765acebd6e81205962ab5146023b3c858d"
+    },
+    {
+      "distribution": "rich",
+      "version": "15.0.0",
+      "path": "third_party_licenses/rich/rich-15.0.0.dist-info__licenses__LICENSE",
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    {
+      "distribution": "sniffio",
+      "version": "1.3.1",
+      "path": "third_party_licenses/sniffio/sniffio-1.3.1.dist-info__LICENSE",
+      "sha256": "652c878488d1456361e08c3f8607fd7ba59892a14103d15cce4ff93c85b5cc8b"
+    },
+    {
+      "distribution": "sniffio",
+      "version": "1.3.1",
+      "path": "third_party_licenses/sniffio/sniffio-1.3.1.dist-info__LICENSE.APACHE2",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "distribution": "sniffio",
+      "version": "1.3.1",
+      "path": "third_party_licenses/sniffio/sniffio-1.3.1.dist-info__LICENSE.MIT",
+      "sha256": "3e6dae555eb92787fc82d1d48355677f454c7f65aeb38d3f9e72bf9a3daf034b"
+    },
+    {
+      "distribution": "tenacity",
+      "version": "9.1.4",
+      "path": "third_party_licenses/tenacity/tenacity-9.1.4.dist-info__licenses__LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "distribution": "tqdm",
+      "version": "4.70.1",
+      "path": "third_party_licenses/tqdm/tqdm-4.70.1.dist-info__licenses__LICENCE",
+      "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+    },
+    {
+      "distribution": "truststore",
+      "version": "0.10.4",
+      "path": "third_party_licenses/truststore/truststore-0.10.4.dist-info__licenses__LICENSE",
+      "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+    },
+    {
+      "distribution": "types-requests",
+      "version": "2.33.0.20261006",
+      "path": "third_party_licenses/types-requests/types_requests-2.33.0.20261006.dist-info__licenses__LICENSE",
+      "sha256": "295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe"
+    },
+    {
+      "distribution": "typing_extensions",
+      "version": "4.16.0",
+      "path": "third_party_licenses/typing-extensions/typing_extensions-4.16.0.dist-info__licenses__LICENSE",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "distribution": "typing-inspection",
+      "version": "0.4.4",
+      "path": "third_party_licenses/typing-inspection/typing_inspection-0.4.4.dist-info__licenses__LICENSE",
+      "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+    },
+    {
+      "distribution": "urllib3",
+      "version": "2.8.0",
+      "path": "third_party_licenses/urllib3/urllib3-2.8.0.dist-info__licenses__LICENSE.txt",
+      "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+    },
+    {
+      "distribution": "uuid_utils",
+      "version": "0.17.1",
+      "path": "third_party_licenses/uuid-utils/uuid_utils-0.17.1.dist-info__licenses__LICENSE.md",
+      "sha256": "209330e81d3a89860e9ec79e9bf894be705f0755a3869d77aa091fc4a2f91903"
+    },
+    {
+      "distribution": "websockets",
+      "version": "16.1.1",
+      "path": "third_party_licenses/websockets/websockets-16.1.1.dist-info__licenses__LICENSE",
+      "sha256": "0f44514998aca209d3482d10204a8adf2aa4296ff157a36a5c0922f2280632d3"
+    },
+    {
+      "distribution": "xxhash",
+      "version": "4.0.1",
+      "path": "third_party_licenses/xxhash/xxhash-4.0.1.dist-info__licenses__LICENSE",
+      "sha256": "b76e99529f3e47372029e11914a8f4b95d6313463ed5a1a5c9afe96c3e015114"
+    },
+    {
+      "distribution": "zstandard",
+      "version": "0.25.0",
+      "path": "third_party_licenses/zstandard/zstandard-0.25.0.dist-info__licenses__LICENSE",
+      "sha256": "c15b28f8866500bd3d607c739e87710aa5c47627aa30a0573948414564ff1da2"
+    }
+  ],
+  "metadata_only_missing_license_text": [
+    "tokenizers",
+    "langsmith"
+  ],
+  "vendored": "Jinja2 and MarkupSafe retain their .dist-info/licenses in vendor; NVIDIA assets retain assets/nemotron_tokenizer/LICENSE (OpenMDW-1.1)",
+  "adr_license": "NOT_SELECTED_NO_GRANT_OF_OWN_CODE"
+}

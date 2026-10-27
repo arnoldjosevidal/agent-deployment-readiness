@@ -1,0 +1,11 @@
+{
+  "model": "nvidia/Nemotron-3_5-Lightning",
+  "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+  "verified": false,
+  "proof_path": null,
+  "proof_sha256": null,
+  "review_reference": null,
+  "template_sha256": null,
+  "tokenizer_sha256": null,
+  "blocking_reason": "Public NVIDIA tokenizer pinned; equivalent Nebius serving serialization not accredited. Do not mark verified on local count/margin alone."
+}

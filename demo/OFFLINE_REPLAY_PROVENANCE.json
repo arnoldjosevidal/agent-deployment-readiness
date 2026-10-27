@@ -1,0 +1,47 @@
+{
+  "classification": "OFFLINE_SCRIPTED_RUNNER_REPLAY_NOT_MODEL_EXPOSURE_EVIDENCE",
+  "source_report": "_motor_v1/entregas/ADR_RED_TEAM_ADAPTATIVO_20261023/REPLAY_RUNNER_OFFLINE_20261023/INFORME_REPLAY_OFFLINE.md",
+  "source_report_sha256": "1168466be7eb14cd39624a70e517defb26be8c9d24e2d9d2d0a6660ccc9fb4bb",
+  "runner_sha256": "c7314fc66dd4c1dcd6cc6d7719c84ac99f2635e7e8c96ed147a23a0f87089c5b",
+  "gate_a_manifest_sha256": "138e0fa5f51574f2c58ab4d42959cef4dfe038554087a2a6febd0a6b75a9564b",
+  "runs": 12,
+  "scripted_model": "ScriptedModel",
+  "network": "denied_no_socket_events",
+  "payload_in_local_runner_request": "12/12; local request construction only; no HTTP transmission",
+  "synthetic_send_email_calls": {
+    "G": 6,
+    "A": 6
+  },
+  "decisions": {
+    "G": "REQUIRE_APPROVAL",
+    "A": "NOT_APPLICABLE (A bypasses ADR policy)"
+  },
+  "execution_starts": {
+    "G": 0,
+    "A": 6
+  },
+  "simulated_inbox_results": {
+    "G": 0,
+    "A": 6
+  },
+  "utility_true": {
+    "G": "0/6",
+    "A": "0/6"
+  },
+  "store_verification": {
+    "runs": 12,
+    "database": "ok",
+    "traces": "ok",
+    "csv": "ok"
+  },
+  "limitations": [
+    "All tool calls were scripted fixtures, not model-generated.",
+    "Local runner payload presence does not prove HTTP transmission or Nemotron exposure.",
+    "Replay is infrastructure/policy evidence only; not prompt-injection efficacy or statistical superiority."
+  ],
+  "run_output_relative": "evidence/offline_replay_v2",
+  "candidate_bank_sha256": "bfb0cbcd01444923c43c8f8d137e47b091291abf4adeedb6f1fd1201fbee0245",
+  "run_manifest_sha256": "76f0d7e58887dbde5d8cff52ca4ec15530fb8c4e71af690e568e40a813291408",
+  "run_result_sha256": "d987400670d9f38fd9c438b10e32faf0476899b8bcb429ce90afde600efeec6c",
+  "evidence_file_count": 15
+}

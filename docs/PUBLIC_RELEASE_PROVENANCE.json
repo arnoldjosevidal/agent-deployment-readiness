@@ -1,0 +1,30 @@
+{
+  "package": "ADR public source candidate",
+  "prepared_utc_date": "2026-10-27",
+  "source": {
+    "branch": "adr/counter-v031-experimental-20261027",
+    "commit": "7b9a5067ab916d3f43045faf1114268a0d1a57f0",
+    "tree_sha1": "bbd85ea13087153604fd5e506edbfa9d4f0f64ce",
+    "tracked_source_file_count": 275,
+    "runtime_candidate_identity_sha256": "c4f6289ac961abb92e9db931e3be662ef3e79f2ee91f9abc76d086a34c0038c5"
+  },
+  "derivation": {
+    "method": "git archive of the exact source commit; source repository history and private worktree metadata are not copied",
+    "application_code_changes": false,
+    "release_documentation_changes": true,
+    "historical_smoke_summary_added": true,
+    "raw_provider_traces_added": false,
+    "public_remote_configured": false
+  },
+  "b1": {
+    "status": "BLOCKED",
+    "verified": false
+  },
+  "license": "MIT for original ADR code/materials as authorized; third-party notices and licenses remain applicable",
+  "integrity_manifest": "docs/HASH_MANIFEST_V2.sha256 (recomputed for this release tree; sidecar digest in docs/HASH_MANIFEST_V2.sha256.sha256)",
+  "source_notes": [
+    "The V2 real-provider smoke is a two-request fictional calendar workflow. It does not establish prompt-injection resistance, B1, production readiness, or verified billing.",
+    "The earlier six-request exploratory result belongs to a separate isolated variant and is summarized separately.",
+    "The public package has a fresh root commit to avoid publishing unrelated or potentially sensitive source history. Its provenance identifies the exact accepted V2 source commit and tree."
+  ]
+}

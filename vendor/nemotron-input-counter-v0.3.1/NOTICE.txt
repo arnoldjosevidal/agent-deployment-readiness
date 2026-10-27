@@ -1,0 +1,15 @@
+Nemotron local input counter v0.3.1
+
+The tokenizer assets originate from NVIDIA's public
+nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 repository at revision
+a9904d24bcc1d289a1950fa9d2b978c47cf903b9.
+See LICENSE.NVIDIA for the accompanying NVIDIA license.
+
+The pinned served template includes the Nemotron serving profile used for
+this verification. Asset hashes and the scope of dated checks are recorded
+in manifest.json. No customer payloads, credentials, model weights or
+third-party dependency binaries are included in this bundle.
+
+Dependencies are installed separately from requirements.txt and remain
+subject to their respective licenses. This counter provides bounded local
+input accounting; it does not provide a service SLA or billing guarantee.

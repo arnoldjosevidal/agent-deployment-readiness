@@ -1,0 +1,106 @@
+{
+  "version": "0.3.1",
+  "date_utc": "2026-10-26",
+  "status": "verified-bounded-profile",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "evidence_scope": "Four earlier dated API samples, replayed offline with v0.3.1; not a guarantee for all replicas, regions or future requests.",
+  "live_input_count_checks": [
+    {
+      "case": "customer-initial",
+      "local_prompt_tokens": 4340,
+      "api_prompt_tokens": 4340,
+      "http_status": 200,
+      "pass": true
+    },
+    {
+      "case": "customer-tool-history",
+      "local_prompt_tokens": 4436,
+      "api_prompt_tokens": 4436,
+      "http_status": 200,
+      "pass": true
+    },
+    {
+      "case": "full-tool-history-8191",
+      "local_prompt_tokens": 8191,
+      "api_prompt_tokens": 8191,
+      "http_status": 200,
+      "pass": true
+    },
+    {
+      "case": "full-tool-history-8192",
+      "local_prompt_tokens": 8192,
+      "api_prompt_tokens": 8192,
+      "http_status": 200,
+      "pass": true
+    }
+  ],
+  "verification_request_change": {
+    "max_tokens": 1
+  },
+  "verification_input_rendering_unchanged": true,
+  "prior_api_completion_tokens": 4,
+  "new_api_calls_for_v031_correction": 0,
+  "over_limit_case": {
+    "count": 8193,
+    "within_input_limit": false,
+    "dispatched": false
+  },
+  "offline_tests": {
+    "passed": 30,
+    "failed": 0,
+    "python": "3.12.14",
+    "dependency_environment": "Previously clean-installed environment reused; pinned requirements unchanged.",
+    "added_coverage": [
+      "Raw argument negative-zero refusal, including nested JSON",
+      "Ordinary zero, negative integers and string negative zero remain supported",
+      "Default summary privacy and explicit diagnostic opt-in"
+    ]
+  },
+  "legacy_text_counts": [
+    39,
+    62,
+    2999,
+    3000
+  ],
+  "final_artifact_link": {
+    "post_live_changes": "Rejects lexical negative zero in raw tool arguments; CLI and evaluate_request reports default to summaries. Public documentation and packaging metadata were cleaned.",
+    "offline_final_code_passed": true,
+    "final_vs_recorded_live_inputs": [
+      {
+        "case": "customer-initial",
+        "projection_equal": true,
+        "token_ids_equal": true,
+        "rendered_prompt_sha256_equal": true,
+        "prompt_tokens": 4340
+      },
+      {
+        "case": "customer-tool-history",
+        "projection_equal": true,
+        "token_ids_equal": true,
+        "rendered_prompt_sha256_equal": true,
+        "prompt_tokens": 4436
+      },
+      {
+        "case": "full-tool-history-8191",
+        "projection_equal": true,
+        "token_ids_equal": true,
+        "rendered_prompt_sha256_equal": true,
+        "prompt_tokens": 8191
+      },
+      {
+        "case": "full-tool-history-8192",
+        "projection_equal": true,
+        "token_ids_equal": true,
+        "rendered_prompt_sha256_equal": true,
+        "prompt_tokens": 8192
+      }
+    ]
+  },
+  "limits": [
+    "Documented bounded input profile only; at most 100 messages, independently of the token limit.",
+    "Floating-point schema/argument values and raw argument numeric negative zero are refused; not arbitrary tool serialization.",
+    "No automatic serving-configuration change detection.",
+    "No provider-side custom input cap or no-charge guarantee.",
+    "No output quality or actual tool execution tested."
+  ]
+}

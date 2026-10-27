@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+vendor/nemotron-input-counter-v0.3.1/runtime_packages/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+outputs/
+private/
+AUTHORIZATION_REQUEST.json
+*.sqlite*
+/evidence/
+/config/CAMPAIGN_GRANT.json

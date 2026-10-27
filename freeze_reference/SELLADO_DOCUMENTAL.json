@@ -1,0 +1,8 @@
+{
+  "classification": "PUBLIC_EXPORT_INTEGRITY_RECORD_NOT_GATE_CLOSURE",
+  "manifest_sha256": "138e0fa5f51574f2c58ab4d42959cef4dfe038554087a2a6febd0a6b75a9564b",
+  "original_gate_a_manifest_sha256": "66fcf4c5b14bb7c81c3cfa3ad14733d3c529df73b9a5ee9b3fa18d8b701267fa",
+  "experimental_checkpoint": false,
+  "phase_closed_by_this_export": false,
+  "provider_calls": 0
+}

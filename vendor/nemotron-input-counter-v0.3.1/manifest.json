@@ -1,0 +1,137 @@
+{
+  "version": "0.3.1",
+  "status": "verified-bounded-profile",
+  "model": "nvidia/Nemotron-3_5-Lightning",
+  "profile_id": "nemotron-lightning-input-v2",
+  "public_repository": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "public_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+  "renderer": "MiniJinja 2.18.0",
+  "profile_verification": {
+    "version": "0.3.1",
+    "date_utc": "2026-10-26",
+    "status": "verified-bounded-profile",
+    "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+    "evidence_scope": "Four earlier dated API samples, replayed offline with v0.3.1; not a guarantee for all replicas, regions or future requests.",
+    "live_input_count_checks": [
+      {
+        "case": "customer-initial",
+        "local_prompt_tokens": 4340,
+        "api_prompt_tokens": 4340,
+        "http_status": 200,
+        "pass": true
+      },
+      {
+        "case": "customer-tool-history",
+        "local_prompt_tokens": 4436,
+        "api_prompt_tokens": 4436,
+        "http_status": 200,
+        "pass": true
+      },
+      {
+        "case": "full-tool-history-8191",
+        "local_prompt_tokens": 8191,
+        "api_prompt_tokens": 8191,
+        "http_status": 200,
+        "pass": true
+      },
+      {
+        "case": "full-tool-history-8192",
+        "local_prompt_tokens": 8192,
+        "api_prompt_tokens": 8192,
+        "http_status": 200,
+        "pass": true
+      }
+    ],
+    "verification_request_change": {
+      "max_tokens": 1
+    },
+    "verification_input_rendering_unchanged": true,
+    "prior_api_completion_tokens": 4,
+    "new_api_calls_for_v031_correction": 0,
+    "over_limit_case": {
+      "count": 8193,
+      "within_input_limit": false,
+      "dispatched": false
+    },
+    "offline_tests": {
+      "passed": 30,
+      "failed": 0,
+      "python": "3.12.14",
+      "dependency_environment": "Previously clean-installed environment reused; pinned requirements unchanged.",
+      "added_coverage": [
+        "Raw argument negative-zero refusal, including nested JSON",
+        "Ordinary zero, negative integers and string negative zero remain supported",
+        "Default summary privacy and explicit diagnostic opt-in"
+      ]
+    },
+    "legacy_text_counts": [
+      39,
+      62,
+      2999,
+      3000
+    ],
+    "final_artifact_link": {
+      "post_live_changes": "Rejects lexical negative zero in raw tool arguments; CLI and evaluate_request reports default to summaries. Public documentation and packaging metadata were cleaned.",
+      "offline_final_code_passed": true,
+      "final_vs_recorded_live_inputs": [
+        {
+          "case": "customer-initial",
+          "projection_equal": true,
+          "token_ids_equal": true,
+          "rendered_prompt_sha256_equal": true,
+          "prompt_tokens": 4340
+        },
+        {
+          "case": "customer-tool-history",
+          "projection_equal": true,
+          "token_ids_equal": true,
+          "rendered_prompt_sha256_equal": true,
+          "prompt_tokens": 4436
+        },
+        {
+          "case": "full-tool-history-8191",
+          "projection_equal": true,
+          "token_ids_equal": true,
+          "rendered_prompt_sha256_equal": true,
+          "prompt_tokens": 8191
+        },
+        {
+          "case": "full-tool-history-8192",
+          "projection_equal": true,
+          "token_ids_equal": true,
+          "rendered_prompt_sha256_equal": true,
+          "prompt_tokens": 8192
+        }
+      ]
+    },
+    "limits": [
+      "Documented bounded input profile only; at most 100 messages, independently of the token limit.",
+      "Floating-point schema/argument values and raw argument numeric negative zero are refused; not arbitrary tool serialization.",
+      "No automatic serving-configuration change detection.",
+      "No provider-side custom input cap or no-charge guarantee.",
+      "No output quality or actual tool execution tested."
+    ]
+  },
+  "input_limit": {
+    "default": 8192,
+    "comparison": "prompt_tokens <= input_limit",
+    "overflow": "Reject without truncation; caller must prevent dispatch"
+  },
+  "files_sha256": {
+    "README.md": "7da44c8a175bed294561fb922a3a969be336c6bfdaf006f8c1eea3d19dcaea52",
+    "request-contract.md": "6c0c8454533c40b582c26e0bccee4953a332e022db2dd6d10fe20b31edb2160c",
+    "NOTICE.txt": "c406ec22f396eefd7b9a8fa2804fd86e90b3ea8041decffd128241dff63da9ff",
+    "LICENSE.NVIDIA": "d7c8a9e5d1896d0a9588319cc7b1433e64645ad6d9e55632c30b78d8c038c23b",
+    "requirements.txt": "b796f264e30977786cb9de3826a42c8e20792fefd5e4b4703449407532a7f51c",
+    "count_request.py": "8f68ddffd8382e6e2b3e55f7f2f591f6c0df1e82748633747838b711528d54dc",
+    "count_chat.py": "262ae2f0a7c75d6cb1f693cb88b12ac7aee027603cdd4d0730fff97a917cec7a",
+    "serving_profile.py": "5ebb10a67ca551a4187eb045015c8b88e69eb76bba683939b3eef509e93a0839",
+    "renderer.py": "5ff2b0e18028b2cb08d1086cdc5b194f46c6786681f7d5d9872ae36d0e1dfd40",
+    "served_template.jinja": "17dc9cd8a6b70ec56bc2b758f9539a113ba789b5b025105234ae3aed78a5f49d",
+    "example-tool-history.json": "c7a33173e11fbfe8d70bf6a3f2d7b7881790776e025b80c12cf2657840c502cb",
+    "validation-summary.json": "2e177537424a0b28f991244e72d27b7ee35e3747b175c0e66c2205c34bd2e2b1",
+    "tokenizer/tokenizer.json": "623c34567aebb18582765289fbe23d901c62704d6518d71866e0e58db892b5b7",
+    "tokenizer/tokenizer_config.json": "10f93eabcb9b1602fbb991d6308e787ce1df28ee9cd7a1c6d1e8c3f338b957bc",
+    "tokenizer/special_tokens_map.json": "e9435fefd6d838fd9fcbbc44b97a8e3ff322be7f6dfb7e4fd2468586574bb52b"
+  }
+}

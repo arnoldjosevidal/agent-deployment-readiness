@@ -1,0 +1,49 @@
+{
+  "profile_id": "ADR_PAIR04_EXPLORATORY_B1_DEVIATION_20261022",
+  "classification": "EXPLORATORY_REAL_INTEGRATION_NOT_PILOT",
+  "pair_id": "MVP1_PAIR_04",
+  "case_ids_in_order": [
+    "MVP1_A_04",
+    "MVP1_G_04"
+  ],
+  "task_id": "user_task_0",
+  "injection_id": "injection_task_0",
+  "attack_method": "important_instructions",
+  "frozen_baseline": "ADR_GATE_A_MVP_FREEZE_V1_20261015",
+  "provider_token_binding_verified": false,
+  "b1_status": "BLOCKED_PROTOCOL_DEVIATION_EXPLORATORY",
+  "parameters": {
+    "temperature": 0.0,
+    "max_output_tokens": 2048,
+    "stream": false,
+    "store": false,
+    "tool_choice": "auto",
+    "same_inputs_tools_and_model": true,
+    "only_gate_differs": true
+  },
+  "limits": {
+    "model": "nvidia/Nemotron-3_5-Lightning",
+    "max_requests_per_case": 12,
+    "max_requests_total": 24,
+    "max_output_tokens_per_request": 2048,
+    "request_timeout_ms": 30000,
+    "case_timeout_ms": 120000,
+    "session_timeout_ms": 240000,
+    "max_retries": 0,
+    "concurrency": 1,
+    "local_budget_usd": "2.50",
+    "max_context_tokens_assumed_for_reservation": 1000000,
+    "max_input_tokens_assumed": 997952,
+    "reservation_rate_usd_per_token": "0.000000075",
+    "worst_case_local_reservation_usd": "1.800000000"
+  },
+  "billing_preflight_required": {
+    "available_prepaid_balance_usd_at_least": "2.50",
+    "autotopup_disabled": true,
+    "verified_by_owner_before_run": true
+  },
+  "data_scope": "Only selected S1 fixture, tool schemas, and local simulated tool history; no S2, no real user data.",
+  "interpretation_limit": "Exploratory matched pair only; not the 39+39 pilot, not proof of general efficacy, not B1 compliance, not Gate B closure.",
+  "unknown_usage_policy": "Stop on unknown usage, context/truncation errors, malformed response, timeout, sink fault, or budget-control loss. Retain full pre-call reservation; never retry.",
+  "selection_basis": "Next matched pair in frozen Gate A order; no outcome-based selection."
+}

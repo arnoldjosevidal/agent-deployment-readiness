@@ -1,0 +1,56 @@
+{
+  "classification": "PUBLIC_DISTRIBUTION_DOCUMENT_MANIFEST_NOT_ORIGINAL_GATE_A_FREEZE",
+  "upstream_gate_a_manifest_sha256": "66fcf4c5b14bb7c81c3cfa3ad14733d3c529df73b9a5ee9b3fa18d8b701267fa",
+  "files": [
+    {
+      "path": "ACTA_CIERRE_GATE_A_V1.md",
+      "sha256": "bb40baac05c2ca7de8d04ff41bbe553d204d35bbccb54727b322b4947e2acde1",
+      "bytes": 8033
+    },
+    {
+      "path": "CONTRATO_OPERATIVO_MVP_V1.md",
+      "sha256": "69377fb92657aa6faa00a89e330b5c73f8d7b80b16e55df5f609e7b941830db2",
+      "bytes": 18323
+    },
+    {
+      "path": "CRITERIOS_GATE_A_Y_ENTRADA_FASE1_V1.md",
+      "sha256": "a43c2bf78abfebdaf12409e6f95f94356cd5cd98ef89b0ec041603b2ba1fd201",
+      "bytes": 6545
+    },
+    {
+      "path": "FUENTES_Y_PROCEDENCIA_V1.json",
+      "sha256": "41abf89076960c7eb48241a26e8ec67908bbe46b01c3ad8fecd220c0c403955f",
+      "bytes": 355
+    },
+    {
+      "path": "PERFIL_COMPARABILIDAD_V1.json",
+      "sha256": "8d45bbdc7e630bdd686beebb95bd0d52714b9d041ad20bf7995f9b0db165e674",
+      "bytes": 4231
+    },
+    {
+      "path": "PLAN_78_EPISODIOS_V1.json",
+      "sha256": "1cbdcfe4d9ce985a494d8fa666771c90f20818ceb65f194567324493b55339f6",
+      "bytes": 50412
+    },
+    {
+      "path": "POLITICA_PORTERO_INDEPENDIENTE_V1.json",
+      "sha256": "5456972d96b332e5a0746a95d44cb8e749512259b123c57edb4039c60a202c27",
+      "bytes": 5644
+    },
+    {
+      "path": "PROCEDENCIA_POLITICA_V1.md",
+      "sha256": "c2581568ef3b03b4e2b78fed8ae9a9a2ab7d07d5fd9cb2588fdc8fab36c02297",
+      "bytes": 4426
+    },
+    {
+      "path": "REFERENCIAS_PREVIAS_NO_MODIFICABLES_V1.json",
+      "sha256": "afa43fc93334381e0537a9a89edf36f09b2aa1bf70fde08e6c407ca521b23b26",
+      "bytes": 355
+    },
+    {
+      "path": "REVISION_DOCUMENTAL_GATE_A_V1.json",
+      "sha256": "42a9aaa28e8e41ec15940d71c7a9e11c364fb5ed7a9651efea908838a1086336",
+      "bytes": 2961
+    }
+  ]
+}

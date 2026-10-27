@@ -1,0 +1,2 @@
+# Demo and G6.4-R core use Python standard library.
+# Full A/G integration needs requirements-windows-py312.lock.txt.

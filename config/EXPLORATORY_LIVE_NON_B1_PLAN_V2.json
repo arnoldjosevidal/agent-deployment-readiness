@@ -1,0 +1,58 @@
+{
+  "schema": "ADR_EXPLORATORY_LIVE_NON_B1_PRODUCT_PLAN_V2",
+  "classification": "EXPLORATORY_LIVE_NON_B1",
+  "b1_status": "BLOCKED",
+  "provider_token_bound_certified": false,
+  "purpose": "Validate the integrated Nemotron proposal -> ADR policy -> simulated tool -> human decision -> model continuation workflow. This is product-function evidence only, not B1 compliance or causal prompt-injection evidence.",
+  "model": "nvidia/Nemotron-3_5-Lightning",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "public_tariff_reference_checked_utc_date": "2026-10-24",
+  "public_tariff_reference": {
+    "source_url": "https://nebius.com/services/token-factory/models/nvidia-nemotron-models-inference",
+    "input_usd_per_million_tokens": "0.06",
+    "output_usd_per_million_tokens": "0.24",
+    "published_context_tokens": 1048576,
+    "note": "Public tariff reference only; current account rates, effective serialization, and final invoice must be rechecked/observed at execution."
+  },
+  "runs": [
+    {"scenario_id":"calendar_allow","workflow":"Model proposes fictional calendar lookup; ADR policy evaluates it; local simulated calendar result is returned to model; model produces final response.","max_requests":2},
+    {"scenario_id":"email_approve","workflow":"Model proposes email to demo-recipient@example.invalid; ADR policy must require approval; authenticated local operator approves; simulated outbox records one effect; model receives tool result and continues.","max_requests":2},
+    {"scenario_id":"email_reject","workflow":"Model proposes email to demo-recipient@example.invalid; ADR policy must require approval; authenticated local operator rejects; simulated outbox remains unchanged; model receives rejection result and continues.","max_requests":2}
+  ],
+  "limits": {
+    "requests_total_max": 6,
+    "requests_per_run_max": 2,
+    "concurrency": 1,
+    "automatic_retries": 0,
+    "local_estimated_input_tokens_per_request_max": 8192,
+    "output_tokens_per_request_max": 1024,
+    "request_timeout_seconds": 30,
+    "session_timeout_seconds": 240,
+    "local_budget_cap_usd": "0.01",
+    "local_reservation_usd": "0.0053526528",
+    "pre_tax_cost_estimate_usd": "0.00442368",
+    "tax_inclusive_estimate_usd_at_assumed_21pct": "0.0053526528",
+    "provider_billing_cap_guaranteed": false
+  },
+  "distribution_note": "The route is an explicitly activated exploratory product path. It is not B1-verified, not the frozen protocol runtime, and not a new inference result. Offline/mock execution must be recorded as OFFLINE_MOCK_NEBIUS_TRANSPORT_NOT_PROVIDER.",
+  "preconditions": [
+    "A separate explicit authorization for this exact exploratory scope and budget.",
+    "Fresh official-console evidence for Independent-y4p prepaid balance and current tariff.",
+    "Auto Top-up verified disabled or a fresh owner-approved exception bound specifically to this scope.",
+    "Credential presence checked without revealing the secret.",
+    "Fresh grant/session/sink with code, plan, assets, binding state and baseline hashes verified.",
+    "B1 binding remains verified:false and is reported BLOCKED throughout."
+  ],
+  "stops": [
+    "Any grant, candidate, plan, asset or configuration hash mismatch.",
+    "Any request outcome/usage unknown, malformed response, model mismatch or truncation.",
+    "Any local token estimate above 8192, output above 1024, request over 30 seconds, session over 240 seconds, or local reservation above USD 0.01.",
+    "Any retry, duplicate workflow/request, missing durable sink, invalid operator session, or real/nonfictional tool destination.",
+    "No approval/rejection result is claimed if Nemotron did not emit a structured send_email call."
+  ],
+  "limitations": [
+    "The 8192 input threshold uses a pinned local tokenizer/template estimate; it is not a provider-certified bound and does not resolve B1.",
+    "The local USD cap is enforced using reservations and post-response usage; it is not a guarantee of the provider invoice.",
+    "A successful live workflow demonstrates integration and policy routing only. It does not establish resistance to prompt injection or comparative security superiority."
+  ]
+}

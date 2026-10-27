@@ -1,0 +1,26 @@
+{
+  "date_local": "2026-10-18",
+  "scope": "Fresh Windows/Python 3.12.10 installation and minimal startup only; not model validation or replay of accepted regressions",
+  "status": "PASS",
+  "dependency_versions_installed_and_matched": 72,
+  "pip_check": "PASS_NO_BROKEN_REQUIREMENTS",
+  "startup_checks": [
+    "CLEAN_VENV_NO_SYSTEM_SITE_PACKAGES",
+    "CANDIDATE_DOCUMENT_MANIFEST_LOADS",
+    "S1_ONLY_DEPENDENCY_IMPORT_AND_24_TOOL_SCHEMAS",
+    "LOCAL_TOKENIZER_LOADS_PROVIDER_BINDING_STAYS_FALSE",
+    "SQLITE_TRACE_CSV_EMPTY_STORE_STARTS",
+    "TRANSPORT_STARTS_ZERO_BUDGET_ZERO_REQUESTS"
+  ],
+  "system_site_packages": false,
+  "local_initial_payload_tokens": 4050,
+  "provider_binding_verified": false,
+  "external_model_calls": 0,
+  "real_episodes": 0,
+  "spend_usd": "0",
+  "s2_opened": false,
+  "accepted_test_suites_repeated": false,
+  "python_source_changed": false,
+  "raw_private_logs_or_account_ids_included": false,
+  "limitations": "Public package downloads were needed for installation. Startup was then run with a Python socket/process deny hook. This is not an OS sandbox, real-provider test or full regression suite."
+}

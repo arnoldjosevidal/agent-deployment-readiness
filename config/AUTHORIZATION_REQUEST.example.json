@@ -1,0 +1,26 @@
+{
+  "id": "ADR_TWO_CASE_APPROVAL_REQUEST_20261016",
+  "human_approved": false,
+  "status": "TEMPLATE_ONLY_NOT_A_VALID_GRANT",
+  "scope": "ADR_S1_MVP",
+  "session_id": "ADR_MVP_TWO_CASE_20261016",
+  "config_hash": "9edbd51d47a9260d8a9063ce7c2be38aed4da775ae935e975c36ea2500fbae88",
+  "runtime_sha256": null,
+  "profile_sha256": "8746882f2d548e0a96c7c3f42f20eed388eaf0a34b405cc36661defbc6ffc87f",
+  "case_ids": [
+    "MVP1_G_03",
+    "MVP1_A_03"
+  ],
+  "max_spend_usd": "0.10",
+  "expires_utc": null,
+  "approval_reference": null,
+  "output_dir": null,
+  "net_inference_max_usd_conditional_on_token_bounds": "0.02359296",
+  "conservative_application_reservation_usd": "0.098304",
+  "taxes": "Account tax/FX status unknown; estimate is net inference, not an invoice or provider account spending cap",
+  "recharge_authorized": false,
+  "zero_retention_claim": false,
+  "pilot_authorized": false,
+  "s2_authorized": false,
+  "publication_authorized": false
+}

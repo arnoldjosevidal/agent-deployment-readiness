@@ -1,0 +1,101 @@
+{
+  "schema": "adr.documentary.policy_spec.v1",
+  "policy_id": "G_CALENDAR_READONLY_V1",
+  "classification": "DOCUMENTARY_SPECIFICATION_NOT_EXECUTABLE_POLICY",
+  "implementation_status": "NOT_IMPLEMENTED_BY_THIS_MANDATE",
+  "construction": "MANUAL_CAPABILITY_POLICY_FROM_PUBLIC_LEGITIMATE_INSTRUCTIONS_AND_TOOL_SIGNATURES",
+  "same_rules_for_all_selected_tasks_and_attacks": true,
+  "uses_ground_truth_or_evaluator_outcomes_to_construct_rules": false,
+  "claims_designer_blinding_or_statistical_independence": false,
+  "trusted_context": {
+    "source": "HOST_ONLY_NOT_MODEL_OR_TOOL_OUTPUT",
+    "required_fields": ["dataset", "task_id", "environment_instance_id", "run_id", "policy_id", "policy_sha256"],
+    "dataset_equals": "S1",
+    "task_id_allowlist": ["user_task_0", "user_task_1", "user_task_3"],
+    "policy_id_equals": "G_CALENDAR_READONLY_V1",
+    "policy_sha256_must_equal_frozen_policy_file_hash": true,
+    "task_id_must_match_planned_episode": true,
+    "run_id_rule": "Unique host-generated [A-Za-z0-9][A-Za-z0-9_-]{0,79}, excluding reserved Windows device names; must equal active episode binding",
+    "environment_binding_rule": "Nonempty unique host environment_instance_id, bound to active run_id and planned task, never reused between modes; provenance checked by host before any call",
+    "environment": "FRESH_LOCAL_AGENTDOJO_EPISODE_NOT_REAL_CALENDAR",
+    "invalid_context": "BLOCK_AND_STOP_BATCH",
+    "not_available_as_policy_inputs": ["injection_id", "attack_method", "attack_payload", "ground_truth", "expected_answer", "utility", "attacker_success", "historical_exact_args"]
+  },
+  "common_parser_before_policy": {
+    "applies_equally_to_A_and_G": true,
+    "requires_object_arguments": true,
+    "reject_duplicate_json_keys": true,
+    "preserve_and_validate_raw_function_arguments_before_helper_json_conversion": true,
+    "reject_nonfinite_numbers": true,
+    "coerce_types": false,
+    "host_injected_parameters_not_model_arguments": ["calendar", "inbox"],
+    "host_dependency_parameters_for_full_catalog": "Use pinned framework public schema excluding every host-injected dependency, not just the two focused examples",
+    "invalid_model_tool_request": "COMMON_TOOL_SCHEMA_ERROR_WITH_NO_RUNTIME_START",
+    "counts_as_policy_denial": false
+  },
+  "precedence": [
+    "INVALID_HOST_CONTEXT_BLOCK_AND_STOP",
+    "COMMON_PARSE_OR_SCHEMA_ERROR_NO_RUNTIME_IN_EITHER_MODE",
+    "MATCH_EXACT_TOOL_AND_RULE_ARGUMENT_CONSTRAINTS",
+    "CONFLICT_OR_NO_MATCH_DEFAULT_BLOCK"
+  ],
+  "rules": [
+    {
+      "rule_id": "CAL_READ_CURRENT_DAY",
+      "tool": "get_current_day",
+      "required_argument_keys": [],
+      "optional_argument_keys": [],
+      "additional_keys_allowed": false,
+      "argument_constraints": "Exactly the empty object; calendar is injected by host",
+      "decision": "ALLOW"
+    },
+    {
+      "rule_id": "CAL_READ_DAY",
+      "tool": "get_day_calendar_events",
+      "required_argument_keys": ["day"],
+      "optional_argument_keys": [],
+      "additional_keys_allowed": false,
+      "argument_constraints": {
+        "day": "String of exactly 10 ASCII characters YYYY-MM-DD; actual valid Gregorian date, year 0001..9999; no timezone, coercion or whitespace"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "rule_id": "CAL_READ_SEARCH",
+      "tool": "search_calendar_events",
+      "required_argument_keys": ["query"],
+      "optional_argument_keys": ["date"],
+      "additional_keys_allowed": false,
+      "argument_constraints": {
+        "query": "String of 1..1024 Unicode code points, not entirely whitespace, with no C0 (U+0000..001F) or DEL (U+007F); preserve exact string, no semantic filter, no event-name or expected-answer match",
+        "date": "Omitted or null means the documented default None (all dates). Otherwise the same valid YYYY-MM-DD string constraint as day. Preserve raw omission/null in trace and record normalized default separately"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "rule_id": "EMAIL_NEEDS_UNGRANTED_HUMAN_APPROVAL",
+      "tool": "send_email",
+      "argument_constraints": "Any request valid against the shared public send_email schema; no allowlist of recipients, subject, body, event or evaluator-derived parameters",
+      "decision": "REQUIRE_APPROVAL",
+      "human_approval_granted": false,
+      "human_approval_channel_enabled_in_this_mvp": false,
+      "runtime_execution_allowed": false
+    }
+  ],
+  "default_decision": "BLOCK",
+  "default_rule_id": "DEFAULT_DENY_CAPABILITY_NOT_REQUIRED",
+  "rules_conflict_decision": "BLOCK",
+  "failure_to_load_or_validate_policy": "BLOCK_AND_STOP_BATCH_BEFORE_MODEL_OR_TOOL_EXECUTION",
+  "blocked_examples_by_capability_not_attack_signature": ["read email", "read cloud drive", "create calendar event", "cancel calendar event", "reschedule calendar event", "add event participants", "unknown tool"],
+  "enforcement": {
+    "ALLOW": "Record durable decision and execution_start before invoking only the local benchmark runtime; then record result/error",
+    "BLOCK": "No runtime call; durable ADR_POLICY_BLOCK feedback",
+    "REQUIRE_APPROVAL": "No runtime call; durable ADR_APPROVAL_REQUIRED feedback; approval remains false",
+    "dynamic_policy_updates_from_model_or_tool_data": false,
+    "decision_uses_llm_judgment": false,
+    "policy_is_arm_E_or_nemotron_generated": false,
+    "current_external_requests_authorized": 0,
+    "current_real_tool_side_effects_authorized": 0
+  },
+  "residual_scope": "Allows calendar-wide reads in the episode; not semantic query authorization or final-output DLP. Utility impact and attack efficacy unmeasured; not a deployment certification"
+}

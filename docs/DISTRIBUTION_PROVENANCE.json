@@ -1,0 +1,73 @@
+{
+  "id": "ADR_MVP_PUBLIC_REVIEW_EXPORT_20261016",
+  "original_gate_a_manifest_sha256": "66fcf4c5b14bb7c81c3cfa3ad14733d3c529df73b9a5ee9b3fa18d8b701267fa",
+  "distribution_document_manifest_sha256": "138e0fa5f51574f2c58ab4d42959cef4dfe038554087a2a6febd0a6b75a9564b",
+  "original_gate_a_modified": false,
+  "distribution_not_a_new_experimental_freeze": true,
+  "private_inventory_removed": true,
+  "changes": [
+    {
+      "path": "freeze_reference/FUENTES_Y_PROCEDENCIA_V1.json",
+      "reason": "Distribution-only privacy redaction/provenance stub",
+      "original_sha256": "848114123d709aaf595c0c2ef39cb869c49d33b61ee99dae3595d05af84777ab",
+      "export_sha256": "41abf89076960c7eb48241a26e8ec67908bbe46b01c3ad8fecd220c0c403955f"
+    },
+    {
+      "path": "freeze_reference/PLAN_78_EPISODIOS_V1.json",
+      "reason": "Distribution-only privacy redaction/provenance stub",
+      "original_sha256": "b2e73ec4cf42e1570e1b89d40e856913b6a039b73a85dc3d5524566c1534f71d",
+      "export_sha256": "1cbdcfe4d9ce985a494d8fa666771c90f20818ceb65f194567324493b55339f6"
+    },
+    {
+      "path": "freeze_reference/REFERENCIAS_PREVIAS_NO_MODIFICABLES_V1.json",
+      "reason": "Distribution-only privacy redaction/provenance stub",
+      "original_sha256": "8b80f022fa2f81cf866d1757024d84e490d0bf052d4c5a8e938f1f519571907a",
+      "export_sha256": "afa43fc93334381e0537a9a89edf36f09b2aa1bf70fde08e6c407ca521b23b26"
+    },
+    {
+      "path": "adr_gateb/design.py",
+      "reason": "Only MANIFEST_SHA distribution data constant updated for sanitized documents; executable logic/policy/profile unchanged",
+      "original_sha256": "e972d6df78db150a9a2402e30cdebf195741c608361395a7f1888e5f6e361dbb",
+      "export_sha256": "358d75eca4a31c0aa05dc0c5990aebe0a91c4d531c90b2a3fdebdb3dba63fd0f"
+    },
+    {
+      "path": "demo/index.html",
+      "reason": "Text-only current status labels; synthetic fixture, historical observations and NOT RUN comparison retained; no UI functionality/style changes",
+      "original_sha256": "d959a9e8846cd900c21f018772d991c1847420878b242cf4c9632dcc443f1cc4",
+      "export_sha256": "6846279b7280a1d7a4aa6c76410c56a130c3e980f434db4561954e490750818f"
+    }
+  ],
+  "exact_code_policy_and_profile_preserved_except_document_manifest_constant": true,
+  "all_78_episode_rows_unchanged": true,
+  "b1_control_sha256": "dac4938216a36dbc03d16b75c416d69737aa0aafb11914c7b458e31792c0ff4c",
+  "real_execution_authorized": false,
+  "candidate_id": "ADR_ADAPTIVE_LIVE_20261024_V2",
+  "derived_from": "ADR_ADAPTIVE_LIVE_20261024_V1",
+  "historical_v1_provenance_only": true,
+  "v2_runtime_integration": {
+    "scope": "EXPLORATORY_LIVE_NON_B1",
+    "b1_status": "BLOCKED",
+    "provider_token_binding_verified": false,
+    "original_gate_a_manifest_modified": false,
+    "original_runner_or_baseline_modified": false,
+    "historical_s2_or_campaign_evidence_modified": false,
+    "provider_requests_from_v2": 0,
+    "validation": "21 offline tests passed against a loopback provider mock; mock data is not live evidence",
+    "new_components": [
+      "adr_approval/exploratory_live_runtime.py",
+      "adr_p1/approval_exploratory_transport.py",
+      "run_approval_exploratory_live.py",
+      "config/EXPLORATORY_LIVE_NON_B1_PLAN_V2.json",
+      "diagnostics/test_exploratory_live_non_b1.py"
+    ],
+    "changed_components": [
+      "adr_approval/model_port.py",
+      "adr_approval/server.py",
+      "adr_approval/workflow.py",
+      "adr_approval/index.html",
+      "adr_live/model.py"
+    ],
+    "details_reference": "docs/PARITY_INTEGRATION_V2.md"
+  },
+  "note": "The original fields above document inherited V1 distribution redactions. V2 adds only the bounded exploratory product path named below; this file is not an experimental freeze and does not certify B1."
+}

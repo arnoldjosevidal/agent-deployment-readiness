@@ -1,0 +1,94 @@
+{
+  "classification": "DOCUMENT_COMPLETENESS_AND_HASH_REVIEW_NOT_PRODUCT_TEST",
+  "counts": {
+    "A_NO_GATE": {
+      "attacked": 36,
+      "benign": 3,
+      "total": 39
+    },
+    "G_CALENDAR_READONLY_V1": {
+      "attacked": 36,
+      "benign": 3,
+      "total": 39
+    }
+  },
+  "criteria": [
+    {
+      "evidence_note": "Scope and authoritative reconciliation linked",
+      "id": "GA-01",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Explicit unique 78-row NOT_RUN plan; same 39 cases per mode",
+      "id": "GA-02",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Pair metadata and shared system/tool/runtime constraints defined",
+      "id": "GA-03",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Static policy specification complete; no policy execution performed",
+      "id": "GA-04",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Only permitted instruction/signature extracts support capability rules; no event/date solution rules; history familiarity disclosed",
+      "id": "GA-05",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Comparable parameters/caps/seeds fixed; actual authorization zero and runtime dependencies explicitly future",
+      "id": "GA-06",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Metrics, denominators, missingness and boolean polarity explicitly specified",
+      "id": "GA-07",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Durable trace/privacy/evidence specification present",
+      "id": "GA-08",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Errors/stops/reruns defined with no behavioral cherry-picking",
+      "id": "GA-09",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Conservative claims and no extra research/S2 requirement",
+      "id": "GA-10",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Versioned payloads ready; previous files intact; manifest/seal verified on canonical persistence",
+      "id": "GA-11",
+      "status": "PASS"
+    },
+    {
+      "evidence_note": "Phase1 and real authorization separated; stop after documentary close",
+      "id": "GA-12",
+      "status": "PASS"
+    }
+  ],
+  "freeze_id": "ADR_GATE_A_MVP_FREEZE_V1_20261015",
+  "manifest_status": "Final MANIFEST_SHA256 and SELLADO_DOCUMENTAL must match to make canonical closure effective",
+  "missing_decisions": [],
+  "new_model_episodes": 0,
+  "new_product_tests": 0,
+  "operational_code_changed": false,
+  "pair_metadata_equal": true,
+  "pairs": 39,
+  "permitted_source_hashes_match": true,
+  "plan_sha256": "b2e73ec4cf42e1570e1b89d40e856913b6a039b73a85dc3d5524566c1534f71d",
+  "policy_sha256": "5456972d96b332e5a0746a95d44cb8e749512259b123c57edb4039c60a202c27",
+  "previous_files_checked": 564,
+  "previous_files_unchanged": true,
+  "profile_sha256": "8d45bbdc7e630bdd686beebb95bd0d52714b9d041ad20bf7995f9b0db165e674",
+  "provider_calls": 0,
+  "s2_opened": false,
+  "verdict": "PASS"
+}

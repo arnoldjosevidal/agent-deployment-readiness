@@ -1,0 +1,44 @@
+{
+  "classification": "EXPLORATORY_LIVE_NON_B1",
+  "kind": "historical real-provider smoke summary; not a replay",
+  "date": "2026-10-27",
+  "source": {
+    "branch": "adr/counter-v031-experimental-20261027",
+    "commit": "7b9a5067ab916d3f43045faf1114268a0d1a57f0",
+    "runtime_candidate_identity_sha256": "c4f6289ac961abb92e9db931e3be662ef3e79f2ee91f9abc76d086a34c0038c5"
+  },
+  "provider": "Nebius Token Factory",
+  "model": "nvidia/Nemotron-3_5-Lightning",
+  "workflow": "calendar_allow",
+  "real_provider_requests": 2,
+  "observations": {
+    "model_proposed_tool": "search_calendar_events",
+    "adr_decision": "ALLOW",
+    "tool_effect": "fictional calendar fixture only",
+    "tool_result_included_in_followup_request": true,
+    "model_final_response_received": true
+  },
+  "reported_usage": {
+    "prompt_tokens": 1481,
+    "completion_tokens": 79
+  },
+  "estimated_cost_usd": 0.00010782,
+  "invoice_amount_verified": false,
+  "known_limitation": "The model proposed 2025-01-01 while the fixed calendar fixture returned an event dated 2026-10-24; the fixture does not filter by the model's date argument. This smoke does not verify calendar-query accuracy.",
+  "evidence": {
+    "result_json_sha256": "73a14788d6aeac6a4b427d27e00306597ac1c09a0974572a2e37b7ca0f43d3bb",
+    "final_session_manifest_sha256": "134fe501e337a8bdc32994e84e9ba60df7cca9c2870ef90cc4c480f2cc3d04ea",
+    "raw_evidence_in_public_package": false
+  },
+  "claims_not_supported": [
+    "B1 verification",
+    "prompt-injection resistance or causal attack protection",
+    "general calendar accuracy",
+    "production readiness",
+    "invoice amount or final billed cost"
+  ],
+  "b1": {
+    "status": "BLOCKED",
+    "verified": false
+  }
+}

@@ -1,0 +1,4 @@
+# Keep distribution bytes stable across Windows and Unix checkouts so the
+# bundled SHA-256 manifest can be checked without line-ending conversion.
+* -text
+freeze_reference/** -text
