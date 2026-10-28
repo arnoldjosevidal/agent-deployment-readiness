@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="adr-build" content="ADR_FINAL_JUDGE_EXPERIENCE_20261026_V1">
+<title>ADR — Agent Deployment Readiness | Evidence before deployment</title>
+<link rel="stylesheet" href="/app.css">
+<script defer src="/app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#overview" data-page="home" aria-label="ADR overview"><span class="brand-mark">A</span><span><b>ADR</b><small>AGENT DEPLOYMENT READINESS</small></span></a>
+  <div class="header-status"><span id="operator">Local operator not signed in</span><span class="badge offline">OFFLINE SCRIPTED DEMO</span><span class="badge build" data-build-id="ADR_FINAL_JUDGE_EXPERIENCE_20261026_V1">FINAL JUDGE EXPERIENCE</span><button id="logout" class="button quiet hidden" type="button">Sign out</button></div>
+</header>
+<main>
+<section class="hero wrap" id="overview">
+  <div class="hero-copy">
+    <div class="eyebrow">Evidence before deployment · action control for AI agents</div>
+    <h1>Your AI agent has access.<br><em>But does it have permission?</em></h1>
+    <p class="hero-definition"><strong>ADR — Agent Deployment Readiness</strong> is an action-control and evidence layer for AI agents. It checks each proposed action before execution: allow permitted work, block prohibited actions, or ask a person to review sensitive actions.</p>
+    <p class="hero-benefit">It controls the action—not every step of the agent’s legitimate task.</p>
+    <div class="hero-actions"><a class="button primary" href="#guided" data-page="guided">Start Guided Experience <span aria-hidden="true">→</span></a><a class="button secondary" href="#lab" data-page="lab">Put ADR to the Test</a></div>
+  </div>
+  <aside class="hero-visual" aria-label="ADR action-control concept">
+    <div class="hero-quote">More control.<br>Less disruption.<br><strong>Greater confidence.</strong></div>
+    <div class="permission-question">What may the agent do?</div>
+    <div class="decision-key"><span><i class="dot allow"></i><b>ALLOW</b><small>Permitted action proceeds</small></span><span><i class="dot block"></i><b>BLOCK</b><small>Prohibited action stops</small></span><span><i class="dot approval"></i><b>REQUIRE_APPROVAL</b><small>Human reviews one action</small></span></div>
+    <div class="hero-foot">Agent proposes <span>→</span> ADR checks <span>→</span> authorized work continues</div>
+  </aside>
+</section>
+<section class="principles wrap" aria-label="How ADR works">
+  <div><span>01</span><b>Agent proposes</b><small>A structured action request</small></div><i class="connector" aria-hidden="true"></i>
+  <div><span>02</span><b>ADR evaluates</b><small>Policy runs before the effect</small></div><i class="connector" aria-hidden="true"></i>
+  <div><span>03</span><b>Action is decided</b><small>Allow · block · ask a person</small></div><i class="connector" aria-hidden="true"></i>
+  <div><span>04</span><b>Task can continue</b><small>Outcome and evidence are recorded</small></div>
+</section>
+<section id="loginCard" class="login-wrap wrap">
+  <div class="login-card"><div class="eyebrow">Local operator console</div><h2>Try the working experience</h2><p>Sign in to run fictional fixtures and approve or reject a held action. Decisions are checked by the local backend. Nothing is sent to a model provider.</p>
+    <form id="loginForm"><label for="password">Local operator password</label><input id="password" type="password" autocomplete="current-password" required><button class="button primary" type="submit">Enter the experience</button><div id="loginMessage" class="message" role="status" aria-live="polite"></div></form>
+    <small class="auth-note">The owner sets this password in the local server terminal. It is never included in the candidate.</small>
+  </div>
+</section>
+<section id="workspace" class="hidden">
+  <nav class="main-nav wrap" aria-label="Main navigation">
+    <button data-page="home" aria-current="true">Overview</button><button data-page="guided">Guided Experience</button><button data-page="lab">Put ADR to the Test</button><button data-page="evidence">Results &amp; Evidence</button><button data-page="technology">Technology &amp; Scale</button><button data-page="faq">FAQ</button>
+  </nav>
+  <div class="wrap content">
+    <section id="page-home" class="page active">
+      <div class="section-heading"><div><div class="eyebrow">Choose how to explore</div><h2>A control point between proposal and action.</h2></div><p>This local build uses a predetermined ScriptedModel and fictional tools. It does not call Nemotron. Historical provider records are shown separately.</p></div>
+      <div class="overview-grid">
+        <article class="launch-panel guided-launch"><div class="launch-index">01 / GUIDED</div><h3>See one task all the way through</h3><p>Follow a calendar request, inspect untrusted event content, review the agent’s extra action, make a human decision, then see what the task actually completed.</p><button class="button primary" data-go="guided">Start Guided Experience <span aria-hidden="true">→</span></button></article>
+        <article class="launch-panel test-launch"><div class="launch-index">02 / EXPLORE</div><h3>Choose a scenario and compare</h3><p>Run the same existing fixture with and without the ADR policy layer. Compare action effects and task outcomes from saved run records.</p><button class="button secondary" data-go="lab">Put ADR to the Test <span aria-hidden="true">→</span></button></article>
+      </div>
+      <div class="control-strip"><span><i class="dot allow"></i> ALLOW · authorized action runs</span><span><i class="dot block"></i> BLOCK · action stopped; task may continue</span><span><i class="dot approval"></i> REQUIRE_APPROVAL · held for a person</span></div>
+      <div class="evidence-boundary"><b>Evidence boundary</b><span>The interactive experience is offline and scripted. Historical Nemotron/Nebius requests are read-only records; they are not replayed. No prompt-injection resistance, B1 compliance, or production readiness is claimed.</span></div>
+    </section>
+    <section id="page-guided" class="page">
+      <div class="section-heading"><div><div class="eyebrow">A real product tour, linked to the local workflow</div><h2>Stop the bad action. Complete the good task.</h2></div><p>Each step focuses a real part of the run below. The scripted fixture is not evidence that Nemotron followed an injection.</p></div>
+      <div class="tour-shell">
+        <div class="tour-progress"><span id="tourStepCount">READY</span><div class="progress-track"><i id="tourProgress"></i></div><span id="tourStepName">Start</span></div>
+        <div class="tour-copy"><div class="eyebrow" id="tourEyebrow">GUIDED TOUR</div><h3 id="guideTitle">Start with the legitimate request</h3><p id="guideText">The tour will create a local fixture run. You will inspect the same backend state that drives the decisions and results.</p>
+          <div class="tour-controls"><button id="guideStart" class="button primary">Start the tour</button><button id="guidePrev" class="button quiet" disabled>← Back</button><button id="guideNext" class="button secondary" disabled>Next →</button><button id="guideSkip" class="button quiet" disabled>Skip tour</button><button id="guideReplay" class="button quiet hidden">Replay</button><button id="tourTry" data-tour="tour-try" class="button primary hidden">Try a scenario →</button></div>
+        </div>
+      </div>
+      <div id="guidedRun" class="run-slot" aria-live="polite"></div>
+    </section>
+    <section id="page-lab" class="page" data-fixture-classification="OFFLINE_SCRIPTED_FIXTURE_NOT_NEMOTRON_EVIDENCE">
+      <div class="section-heading"><div><div class="eyebrow">Interactive scenario lab · fictional sandbox</div><h2>Same fixture. Different policy path.</h2></div><p>“Without ADR” omits only the action-policy decision. Login, CSRF, the fictional executor and effect restrictions remain active.</p></div>
+      <div class="lab-controls">
+        <div class="control-field"><label for="scenario">Choose an existing scenario</label><select id="scenario"></select><p id="scenarioDescription" class="small-copy"></p><span id="scenarioSource" class="source-label"></span></div>
+        <fieldset class="mode-picker"><legend>Execution mode</legend><label><input type="radio" name="arm" value="with_adr" checked><span class="choice-mark"></span><span><b>With ADR</b><small>Policy evaluates each proposed action</small></span></label><label><input type="radio" name="arm" value="without_adr"><span class="choice-mark"></span><span><b>Without ADR</b><small>Policy layer omitted; sandbox stays on</small></span></label></fieldset>
+        <button id="runScenario" class="button primary run-button">Run this fixture <span aria-hidden="true">→</span></button><div id="labNotice" class="message" role="status" aria-live="polite"></div>
+      </div>
+      <div id="labRun" class="run-slot"></div>
+      <section class="pair-panel"><div class="panel-heading"><div><div class="eyebrow">Matched fixture comparison</div><h3>Compare the two recorded runs</h3></div><span class="source-label">Current interactive runs</span></div><p class="small-copy">Both records use the same selected fixture and scripted proposals. Values below are read from the backend; a missing run is shown as not run.</p><div id="comparison" class="pair-grid"></div></section>
+      <section class="run-history"><div class="panel-heading"><h3>Recent local runs</h3><button id="refreshRuns" class="button quiet">Refresh records</button></div><div id="runHistory"></div></section>
+    </section>
+    <section id="page-evidence" class="page">
+      <div class="section-heading"><div><div class="eyebrow">Results &amp; evidence</div><h2>Every action. Every decision. A traceable outcome.</h2></div><p>Current interactive runs, the historical offline replay, and historical provider requests have separate labels and sources.</p></div>
+      <div class="evidence-tabs" role="tablist" aria-label="Evidence views"><button class="evidence-tab active" data-evidence-view="executive" role="tab" aria-selected="true">Executive view</button><button class="evidence-tab" data-evidence-view="security" role="tab" aria-selected="false">Security &amp; operations</button><button class="evidence-tab" data-evidence-view="audit" role="tab" aria-selected="false">Audit trail</button></div>
+      <section id="evidence-executive" class="evidence-view active">
+        <div class="evidence-source-banner"><b>Historical Offline Replay</b><span>12 runs · 6 per arm · ScriptedModel fixtures · hashes verified on load</span><span id="historicalIntegrity">Verifying source…</span></div>
+        <div class="charts-grid">
+          <article class="chart-panel"><div class="chart-kicker">LEGITIMATE TASK COMPLETION</div><h3>Both arms completed the fixture task</h3><p class="small-copy">Completed tasks / runs · historical offline replay</p><div id="completionChart" class="bar-chart" aria-label="Historical legitimate task completion by arm"></div></article>
+          <article class="chart-panel"><div class="chart-kicker">SIMULATED EMAIL EFFECTS</div><h3>Fictional outbox effects recorded</h3><p class="small-copy">Recorded simulated effects / runs · not real email</p><div id="effectsChart" class="bar-chart" aria-label="Historical simulated email effects by arm"></div></article>
+        </div>
+        <section class="pair-panel historical-record-panel"><div class="panel-heading"><div><div class="eyebrow">Historical Offline Replay · read-only</div><h3>Inspect a source run</h3></div><span class="source-label">12 historical fixture traces</span></div><p class="small-copy">Select a recorded A/G run to inspect its verified trace. These records are not new model requests.</p><div id="historicalRunRecords" class="run-history-list"></div><div id="historicalRunDetails"></div>
+        </section>
+        <div class="evidence-caveat">These counts describe a predetermined offline replay. They do not show that Nemotron followed prompt injection, and they do not establish causal security efficacy.</div>
+        <div class="history-provider"><div><div class="eyebrow">Historical Nebius / NVIDIA requests</div><h3 id="historicalProviderTitle">Read-only historical record</h3><p id="historicalProviderCopy" class="small-copy"></p></div><span class="badge live-history">HISTORICAL · NOT REPLAYED</span></div>
+        <div class="panel-heading"><div><div class="eyebrow">Current Interactive Runs</div><h3>Evidence from this local database</h3></div><span id="localRunValue" class="big-number">—</span></div>
+        <div id="evidenceRuns" class="run-history-list"></div><div id="evidenceRunDetails"></div>
+      </section>
+      <section id="evidence-security" class="evidence-view hidden">
+        <div class="panel-heading"><div><div class="eyebrow">Security &amp; operations</div><h3>Inspect one actual local run</h3></div><span class="source-label">Backend-derived · fictional tools only</span></div><p class="small-copy">Choose a recorded run. The policy reason, action arguments, human decision, simulated effect and task outcome all come from that run’s persisted state.</p><div id="securityRunPicker" class="run-history-list"></div><div id="securityRunDetails"></div>
+      </section>
+      <section id="evidence-audit" class="evidence-view hidden">
+        <div class="audit-summary"><div><div class="eyebrow">Hash-linked event history</div><h3>Audit chain integrity: <strong id="auditValidity">—</strong></h3><p id="auditCount" class="small-copy">Loading local audit record…</p></div><button id="verifyAudit" class="button secondary">Verify now</button></div><div id="auditEvents" class="audit-list"></div>
+      </section>
+      <details class="technical-fold"><summary>Evidence provenance and technical details</summary><pre id="impactDetails"></pre></details>
+    </section>
+    <section id="page-technology" class="page">
+      <div class="section-heading"><div><div class="eyebrow">Technology &amp; architecture</div><h2>What does the model do? What does ADR do?</h2></div><p>Nemotron can propose a structured tool action. ADR’s deterministic policy engine evaluates it before the local fictional executor. The policy decision does not come from the language model.</p></div>
+      <div class="tech-answer"><div><span class="badge offline">CURRENT BUILD · OFFLINE</span><h3>ScriptedModel produces the demo turns.</h3><p>This candidate does not send an API request. It runs the existing local fixture frames through the policy service, simulated tools and persisted workflow.</p></div><div><span class="badge live-history">HISTORICAL RECORD</span><h3>Nebius hosted NVIDIA Nemotron.</h3><p id="modelRecord"></p><p class="small-copy">The six historical requests are separate from this build; their raw provider evidence is not replayed here. B1 remains blocked and unverified.</p></div></div>
+      <section class="architecture-panel"><div class="panel-heading"><div><div class="eyebrow">Current candidate architecture</div><h3>Proposal → policy → fictional effect → continuation</h3></div><span class="badge offline">IMPLEMENTED HERE</span></div>
+        <div class="arch-flow" aria-label="Current application architecture">
+          <div class="arch-node">User request<small>fictional task</small></div><i>↓</i><div class="arch-node">Local app server<small>Python · loopback HTTP</small></div><i>↓</i><div class="arch-node">ScenarioLab + ScriptedModel<small>predefined frames · no provider</small></div><i>↓</i><div class="arch-node highlight">Structured tool proposal<small>tool name + arguments</small></div><i>↓</i><div class="arch-node policy">ADR Policy Engine<small>policy before effect</small></div>
+          <div class="arch-branches"><div class="arch-node allow-node">ALLOW<small>fictional executor runs</small></div><div class="arch-node block-node">BLOCK<small>no action effect</small></div><div class="arch-node approval-node">REQUIRE_APPROVAL<small>human decides exact action</small></div></div>
+          <i class="return-arrow">Result returns to scripted workflow · state and audit event persist in SQLite</i><div class="arch-node result-node">Task outcome + evidence<small>fixture result · local ledger</small></div>
+        </div>
+      </section>
+      <div class="architecture-panel api-flow"><div class="panel-heading"><div><div class="eyebrow">API flow · current implementation</div><h3>What happens, in order</h3></div><span class="source-label">Local same-origin HTTP</span></div>
+        <ol class="api-steps"><li><b>Launch</b><span><code>run_approval_demo.py</code> starts the server on <code>127.0.0.1</code>.</span></li><li><b>Authenticate</b><span>Browser posts to <code>/api/login</code>; backend creates a session and CSRF token.</span></li><li><b>Start a fixture</b><span><code>/api/lab/runs/start</code> stores the selected scenario, mode and idempotency key.</span></li><li><b>Build turn</b><span><code>ScenarioLab</code> packages messages and tool schemas for local <code>ScriptedModel</code>.</span></li><li><b>Propose action</b><span>A fixture frame returns a structured tool name and arguments.</span></li><li><b>Evaluate</b><span><code>ApprovalService.propose</code> binds the action to the frozen local policy design.</span></li><li><b>Branch</b><span>ALLOW executes a fictional tool; BLOCK records denial; REQUIRE_APPROVAL persists a pending action.</span></li><li><b>Human decision</b><span>Authenticated approve/reject posts the immutable action hash and CSRF token.</span></li><li><b>Resume</b><span>The result is added as a tool message; the next ScriptedModel frame produces the fixture’s final response.</span></li><li><b>Persist</b><span>SQLite stores run/action state and hash-linked audit events. The app verifies the chain before display.</span></li><li><b>Provider boundary</b><span>This build sends no request. Historical Nebius requests used NVIDIA Nemotron-3.5-Lightning; V2 live validation is pending.</span></li></ol>
+      </div>
+      <div class="architecture-panel"><div class="panel-heading"><div><div class="eyebrow">Scale, honestly separated</div><h3>Prototype today. Enterprise path proposed.</h3></div></div><div class="scale-grid"><div><span class="badge offline">CURRENT PROTOTYPE</span><ul><li>One local operator, one process, SQLite.</li><li>Fictional tools and deterministic fixture turns.</li><li>Loopback-only server; session + CSRF.</li><li>Hash-linked local audit; no HA or throughput claim.</li></ul></div><div><span class="badge proposal">PROPOSED PRODUCTION ARCHITECTURE</span><ul><li>Agent middleware/interceptor with explicit capability identity.</li><li>Policy service with versioned organization and agent rules.</li><li>Approval service, signed decisions, queue and idempotent workers.</li><li>Tenant-isolated durable database and append-only event storage.</li><li>Secret manager, RBAC, observability, alerts and audit export.</li><li>Horizontal scaling only after load, latency and failure testing.</li><li>Fail-closed behavior for policy or evidence uncertainty.</li></ul></div></div><p class="small-copy">This is a reasoned design path, not a capability or benchmark claim. Governance evidence may help an organization design audit workflows; ADR is not certified for GDPR, the EU AI Act or other frameworks.</p></div>
+      <div class="architecture-panel"><div class="panel-heading"><div><div class="eyebrow">Implementation boundary</div><h3>What works · what is historical · what is still open</h3></div></div><div class="status-columns"><article><h4>WHAT WORKS IN THIS DEMO</h4><p>Fixture-driven ALLOW, BLOCK and REQUIRE_APPROVAL; authenticated human choice; fictional effects; scripted continuation; local audit.</p></article><article><h4>WHAT HAS HISTORICAL EVIDENCE</h4><p>Six exploratory live Nebius/NVIDIA requests in three workflows, shown read-only with stated limitations.</p></article><article><h4>WHAT STILL NEEDS LIVE VALIDATION</h4><p>Reproducible V2 provider integration, B1 token-binding requirements, and model-generated action behavior in this candidate.</p></article><article><h4>WHAT IS PLANNED FOR PRODUCTION</h4><p>Multi-user identity, tenant isolation, service deployment, managed storage, monitoring and operational testing.</p></article></div></div>
+    </section>
+    <section id="page-faq" class="page">
+      <div class="section-heading"><div><div class="eyebrow">Judge questions</div><h2>Clear answers, including the limits.</h2></div><p>Short answers first. Expand any question for more detail.</p></div><div id="faqList" class="faq-list"></div>
+    </section>
+  </div>
+</section>
+</main>
+<footer class="site-footer wrap"><div><b>ADR — Agent Deployment Readiness</b><span>Evidence before deployment.</span></div><p>This experience uses fictional data and a local ScriptedModel fixture. Historical provider records are separate. No prompt-injection resistance, B1 conformance, regulatory certification or production readiness is claimed.</p></footer>
+</body></html>

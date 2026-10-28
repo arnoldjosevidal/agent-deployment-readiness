@@ -1,10 +1,15 @@
 # Agent Deployment Readiness (ADR)
 
+## Owner-approved Judge Experience
+
+The complete six-section interface reviewed by the owner is included under [judge_experience/](judge_experience/README.md), with the original HTML, styles and scripts. The hosted experience is [ADR on HTTPS](https://157.173.123.104/) (owner-managed login; fictional ScriptedModel flows only). Detailed historical trace payloads and private deployment configuration are excluded from the source folder.
+
+
 ADR is a Windows-first local workflow for inspecting an agent's proposed tool actions, applying an independent deterministic gate, and retaining evidence for a matched evaluation.
 
 **The product flow:** the agent proposes an action → ADR evaluates it → a human approves or rejects a held action → the agent continues. The public walkthrough below is a static offline fixture; it does not call Nebius or claim to be a live run.
 
-**Private review candidate — not published. The owner-approved MIT license applies to original ADR code and materials only; third-party components retain their own terms.** The offline integration is accepted. A separate exploratory 39-pair Nemotron/Nebius campaign has real evidence; B1 remains blocked for the original protocol, so no protocol-confirming result is claimed.
+**Public source release.** The owner-approved MIT license applies to original ADR code and materials only; third-party components retain their own terms. The offline integration is accepted. A separate exploratory 39-pair Nemotron/Nebius campaign has real evidence; B1 remains blocked for the original protocol, so no protocol-confirming result is claimed.
 
 ## Show the existing product without inference
 
@@ -90,7 +95,7 @@ The original protocol entrypoint `run_approval_live.py` remains gated by B1 and 
 
 Functional source is reused from the accepted Stage 1 tree. Private historical reference inventories and personal paths in contract documentation are removed. This candidate has its **own distribution manifest**, not the original Gate A freeze. The only Python difference is the document-manifest SHA constant in `adr_gateb/design.py`; policy bytes, profile bytes, all 78 planned episode rows, runner, evaluators and B1 controls are unchanged. See `docs/DISTRIBUTION_PROVENANCE.json`. No historical checkpoints or protected experimental traces are included.
 
-Architecture and limitations: `docs/ARCHITECTURE_AND_LIMITATIONS.md`. Release checklist: `docs/PUBLICATION_CHECKLIST.md`. Licenses: LICENSE for original ADR code and materials, and THIRD_PARTY_NOTICES.md for third-party terms. V2 is a local review candidate, not submitted; no remote or public URL is provided.
+Architecture and limitations: `docs/ARCHITECTURE_AND_LIMITATIONS.md`. Release checklist: `docs/PUBLICATION_CHECKLIST.md`. Licenses: LICENSE for original ADR code and materials, and THIRD_PARTY_NOTICES.md for third-party terms. Public repository: https://github.com/arnoldjosevidal/agent-deployment-readiness. The owner-approved, full six-section Judge Experience source is included in `judge_experience/`; see `judge_experience/README.md`. The hosted review build uses fictional data and a predetermined ScriptedModel; it does not make provider calls.
 
 ## Experimental local input counter (separate from B1)
 
