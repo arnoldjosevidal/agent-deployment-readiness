@@ -5,13 +5,13 @@
 The complete six-section interface reviewed by the owner is included under [judge_experience/](judge_experience/README.md), with the original HTML, styles and scripts. The hosted experience is [ADR on HTTPS](https://157.173.123.104/) (owner-managed login; fictional ScriptedModel flows only). Detailed historical trace payloads and private deployment configuration are excluded from the source folder.
 
 
-ADR is a Windows-first local workflow for inspecting an agent's proposed tool actions, applying an independent deterministic gate, and retaining evidence for a matched evaluation.
+ADR is an agent-action governance workflow: it evaluates proposed tool calls before execution, applies an independent policy gate, routes selected actions to an authenticated human, and records decisions and outcomes. The owner-approved hosted Judge Experience is an interactive six-section application backed by an isolated ADR service; its model turns and tool effects use fictional data and `ScriptedModel`. The source repository also contains offline evaluation tools and a separately guarded experimental Nebius/Nemotron route.
 
-**The product flow:** the agent proposes an action → ADR evaluates it → a human approves or rejects a held action → the agent continues. The public walkthrough below is a static offline fixture; it does not call Nebius or claim to be a live run.
+**The product flow:** an agent proposes an action → ADR evaluates it → a human approves or rejects a held action → the workflow continues when the recorded state permits. The hosted Judge Experience at [ADR on HTTPS](https://157.173.123.104/) is interactive, but uses deterministic `ScriptedModel` turns, fictional data and simulated tool effects; it does not call Nebius or Nemotron. Separately, `demo/index.html` is a static offline walkthrough and historical provider records are read-only summaries, never replayed as new requests.
 
 **Public source release.** The owner-approved MIT license applies to original ADR code and materials only; third-party components retain their own terms. The offline integration is accepted. A separate exploratory 39-pair Nemotron/Nebius campaign has real evidence; B1 remains blocked for the original protocol, so no protocol-confirming result is claimed.
 
-## Show the existing product without inference
+## Explore the source-based offline walkthrough
 
 Open `demo/index.html` directly in a desktop browser. No account, dependency installation, server, credentials or external request is required. Click the seven workflow steps:
 
